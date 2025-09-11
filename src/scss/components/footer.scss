@@ -1,0 +1,139 @@
+.footer {
+  padding-top: 11px;
+  padding-bottom: 13px;
+
+  @include media(desktop) {
+    padding-top: 21px;
+    padding-bottom: 19px;
+  }
+}
+
+.footer-container {
+  padding: 0;
+
+  @include media(desktop) {
+    padding: 0 89px;
+  }
+}
+
+.footer-nav {
+  margin-bottom: 20px;
+
+  @include media(desktop) {
+    margin-bottom: 46px;
+  }
+}
+
+.footer-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
+  @include media(desktop) {
+    gap: 22px;
+  }
+}
+
+.footer-list-item {
+  position: relative;
+
+  &:nth-child(1) {
+    &::after {
+      content: '|';
+      position: absolute;
+      right: -8px;
+      bottom: 0;
+      font-family: 'Cinzel', sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      text-align: center;
+      color: #fff;
+
+      @include media(desktop) {
+        top: 50%;
+        transform: translateY(-50%);
+        bottom: auto;
+        font-size: 24px;
+        right: -14px;
+      }
+    }
+  }
+
+  &:nth-child(2) {
+    &::after {
+      content: '|';
+      position: absolute;
+      right: -8px;
+      bottom: 0;
+      font-family: 'Cinzel', sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      text-align: center;
+      color: #fff;
+
+      @include media(desktop) {
+        top: 50%;
+        transform: translateY(-50%);
+        bottom: auto;
+        font-size: 24px;
+        right: -14px;
+      }
+    }
+  }
+}
+
+.footer-link {
+  font-family: 'Cinzel', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+
+  @include media(desktop) {
+    font-size: 24px;
+  }
+
+  &:hover,
+  &:focus {
+  }
+}
+
+.footer-text-wrapper {
+  @include media(desktop) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.footer-text {
+  font-family: 'Cinzel', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+
+  @include media(desktop) {
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+}
+
+.footer-email-link {
+  font-family: 'Cinzel', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+  @include media(desktop) {
+    font-size: 24px;
+    align-items: center;
+  }
+}

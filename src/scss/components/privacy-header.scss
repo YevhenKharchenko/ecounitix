@@ -1,0 +1,35 @@
+.privacy-header {
+  background: #151515;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+
+  @include media(desktop) {
+    padding: 20px 0;
+  }
+}
+
+.privacy-header-container {
+  padding: 0 10px;
+
+  @include media(desktop) {
+    padding: 0 20px;
+  }
+}
+
+.privacy-header-link {
+  display: flex;
+  align-items: center;
+
+  @include media(desktop) {
+  }
+}
+
+.arrow-back-icon {
+  @include media(desktop) {
+    width: 24px;
+    height: 48px;
+  }
+}

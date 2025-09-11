@@ -1,0 +1,157 @@
+.booking-section {
+}
+
+.faq-bg-wrapper {
+  padding-bottom: 46px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    padding-bottom: 123px;
+    max-width: 1440px;
+  }
+}
+
+.faq-container {
+  padding: 0 16px;
+
+  @include media(desktop) {
+    padding: 0 60px;
+  }
+}
+
+.faq-title {
+  margin-bottom: 30px;
+
+  @include media(desktop) {
+    margin-bottom: 50px;
+  }
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include media(desktop) {
+  }
+}
+
+.faq-list-item {
+  border-bottom: 1px solid rgba(255, 250, 250, 0.33);
+  max-width: 342px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+
+  @include media(desktop) {
+    max-width: 610px;
+  }
+}
+
+.faq-top-text-btn {
+  padding: 6px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s ease-in-out;
+
+  @include media(desktop) {
+    padding: 10px 15px;
+  }
+}
+
+.faq-toggle-symbol {
+  border-radius: 100%;
+  border: 2px solid #ead1ab;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 35px;
+  height: 35px;
+  transition: all 0.3s ease-in-out;
+
+  @include media(desktop) {
+    min-width: 50px;
+    height: 50px;
+  }
+}
+
+.faq-icon {
+  transition: all 0.3s ease-in-out;
+
+  @include media(desktop) {
+    width: 11px;
+    height: 25px;
+  }
+}
+
+.faq-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.faq-btn-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: left;
+  color: #fff;
+
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}
+
+.faq-bottom-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  text-align: left;
+  max-width: 273px;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+
+  @include media(desktop) {
+    font-size: 20px;
+    max-width: 515px;
+  }
+}
+
+.is-visible {
+  max-height: 500px;
+  opacity: 1;
+
+  @include media(desktop) {
+  }
+}
+
+.faq-list-item.faq-open .faq-toggle-symbol {
+  transform: rotate(360deg);
+}
+
+.faq-list-item.faq-open .faq-text-wrapper {
+  gap: 6px;
+
+  @include media(desktop) {
+    gap: 10px;
+  }
+}
+
+.faq-list-item.faq-open .faq-top-text-btn {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  @include media(desktop) {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+}

@@ -1,0 +1,83 @@
+.challenges-section {
+}
+
+.challenges-bg-wrapper {
+  padding-bottom: 64px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    padding-bottom: 124px;
+    max-width: 1440px;
+  }
+}
+
+.challenges-container {
+  padding: 0 21px;
+
+  @include media(desktop) {
+    padding: 0 60px;
+  }
+}
+
+.challenges-title {
+  margin-bottom: 30px;
+
+  @include media(desktop) {
+    margin-bottom: 50px;
+  }
+}
+
+.challenges-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px 28px;
+  }
+}
+
+.challenges-list-item {
+  border: 1px solid #ead1ab;
+  border-radius: 20px;
+  padding: 16px 5px 17px 19px;
+  width: 100%;
+  max-width: 320px;
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  gap: 17px;
+
+  @include media(desktop) {
+    padding: 26px 20px 25px 18px;
+    max-width: 518px;
+    min-height: 115px;
+  }
+}
+
+.challenges-icon {
+  min-width: 39px;
+
+  @include media(desktop) {
+    min-width: 56px;
+    width: 56px;
+    height: 56px;
+  }
+}
+
+.challenges-item-text {
+  font-family: 'Cinzel', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}

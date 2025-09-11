@@ -1,0 +1,107 @@
+.cookie-banner-section {
+  background: #ead1ab;
+  border-radius: 30px 30px 0 0;
+  padding: 19px 14px 10px 14px;
+  width: 100%;
+  max-width: 375px;
+  margin: 0 auto;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: none;
+  z-index: 100;
+  display: none;
+
+  @include media(desktop) {
+    padding: 53px 111px 52px 91px;
+    max-width: 1440px;
+  }
+}
+
+.cookie-banner-wrapper {
+  @include media(desktop) {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+  }
+}
+
+.cookie-banner-text {
+  font-family: 'Cinzel', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.04em;
+  color: #151515;
+  margin-bottom: 42px;
+
+  @include media(desktop) {
+    font-size: 34px;
+    max-width: 796px;
+    margin-bottom: 0;
+  }
+}
+
+.cookie-banner-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  @include media(desktop) {
+    gap: 50px;
+  }
+}
+
+.cookie-accept-btn {
+  background: #151515;
+  border: 1px solid #151515;
+  border-radius: 30px;
+  padding: 8px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Cinzel', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0.04em;
+  color: #fff;
+  width: 100%;
+  max-width: 267px;
+
+  @include media(desktop) {
+    padding: 9px 32px;
+    font-size: 24px;
+    max-width: 352px;
+  }
+}
+
+.cookie-decline-btn {
+  border: 2px solid #151515;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Cinzel', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0.04em;
+  color: #151515;
+  width: 100%;
+  max-width: 267px;
+
+  @include media(desktop) {
+    padding: 7px 32px;
+    font-size: 24px;
+    max-width: 352px;
+  }
+}
+
+.show-cookie-banner {
+  display: block;
+}
