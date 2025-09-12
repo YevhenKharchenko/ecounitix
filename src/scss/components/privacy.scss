@@ -1,5 +1,5 @@
 .policy-section {
-  background: #151515;
+  background: #fff;
   padding-top: 70px;
   padding-bottom: 50px;
 
@@ -10,14 +10,15 @@
 }
 
 .policy-main-title {
-  font-family: 'Cinzel', sans-serif;
-  font-weight: 400;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
   font-size: 24px;
-  color: #fff;
+  text-align: center;
+  color: #101010;
   margin-bottom: 20px;
 
   @include media(desktop) {
-    font-size: 40px;
+    font-size: 44px;
     margin-bottom: 30px;
   }
 }
@@ -26,7 +27,7 @@
   font-family: 'Inter', sans-serif;
   font-weight: 900;
   font-size: 14px;
-  color: #fff;
+  color: #101010;
   margin-bottom: 24px;
 
   @include media(desktop) {
@@ -38,7 +39,7 @@
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 14px;
-  color: #fff;
+  color: #101010;
   margin-bottom: 24px;
 
   @include media(desktop) {
@@ -50,7 +51,7 @@
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 14px;
-  color: #fff;
+  color: #101010;
 
   &:not(:last-child) {
     margin-bottom: 24px;
@@ -70,7 +71,7 @@
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 14px;
-  color: #fff;
+  color: #101010;
   margin-bottom: 8px;
 
   &:last-child {
