@@ -1,14 +1,12 @@
 .pricing-section {
   background: #d5ffce;
-  scroll-margin-top: 30px;
 
   @include media(desktop) {
-    scroll-margin-top: 10px;
   }
 }
 
 .pricing-section-wrapper {
-  padding-top: 0;
+  padding-top: 14px;
   padding-bottom: 33px;
   max-width: 375px;
   margin-left: auto;
